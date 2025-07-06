@@ -1,0 +1,5 @@
+- hosts: all
+  ignore_errors: no # don't touch this, your code should be error free
+  become: yes # make sure the user you run as has root permissions (so run as root)
+  roles:
+   - onboarding

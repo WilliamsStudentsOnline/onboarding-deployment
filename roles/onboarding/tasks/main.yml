@@ -1,0 +1,8 @@
+# your code goes here!
+# remember to also take a look at ../files
+
+# you'll need to fix this at some point as well
+- name: Start the Emacs server
+  ansible.builtin.systemd_service:
+    name: emacs-daemon
+    enable: true

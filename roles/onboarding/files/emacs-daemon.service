@@ -1,0 +1,18 @@
+[Unit]
+Description=Emacs Daemon
+Documentation=GNU Emacs, the editor of a lifetime
+
+[Service]
+Type=notify
+# TODO: read the emacs man page to find what option enables daemon-mode,
+# then go and fix the ExecStart line (as of right now it's not functional).
+# reading man pages is a good habit as a sysadmin! or at the very least,
+# you should be able to google around for the correct thing.
+ExecStart=/usr/bin/ 
+ExecStop=/usr/bin/emacsclient --eval "(kill-emacs)"
+SuccessExitStatus=15
+
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
