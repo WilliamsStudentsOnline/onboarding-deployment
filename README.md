@@ -18,7 +18,7 @@ Now you are ready to roll!
 ## Clone & Test
 To clone the code you'll need, navigate into a directory of your choice and then run:
 ```console
-git clone https://github.com/
+git clone https://github.com/WilliamsStudentsOnline/onboarding-deployment
 ```
 
 The next step is to install the VMs. This is the longest step, but should be quick with a fast internet connection. Grab a [copy of AlmaLinux 10](https://almalinux.org/get-almalinux/) for your architecture and proceed with VM installation. Make a new virtual machine with at minimum, the following specs:
